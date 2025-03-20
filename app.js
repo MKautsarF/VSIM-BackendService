@@ -18,8 +18,10 @@ app.use(cors());
 // setup database
 const dbConfig = {
   user: "postgres",
-  host: "127.0.0.1",
-  password: "12345678",
+  // host: "127.0.0.1",
+  host: "postgres.railway.internal",
+  // password: "12345678",
+  password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
   port: 5432,
   database: "VSIM_DB",
 };
