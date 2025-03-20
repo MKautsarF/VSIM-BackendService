@@ -1,0 +1,26 @@
+{
+  "Calibration": {
+    "PowerBrake": {
+      "Values": [
+        985, 908, 874, 830, 782, 735, 688, 601, 523, 294, 250, 234, 202, 177,
+        147, 110, 72, 8
+      ],
+      "Tolerance": 10
+    },
+    "Reverser": {
+      "Values": [973, 622, 0],
+      "Tolerance": 60
+    },
+    "AutoBrake": {
+      "Values": [
+        0, 87, 152, 217, 282, 347, 412, 477, 542, 607, 676, 800, 980, 999
+      ],
+      "Tolerance": 10
+    },
+    "IndependenBrake": {
+      "Values": [0, 973],
+      "Tolerance": 10
+    }
+  },
+  "Configuration": {}
+}
