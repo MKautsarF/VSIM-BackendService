@@ -24,10 +24,12 @@ const dbConfig = process.env.DATABASE_URL
         user: "postgres",
         host: "postgres.railway.internal",
         // host: "127.0.0.1",
-        password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
+        // password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
+        password: "AANLOMYHXsRHgzTbMiICaqlvyjOFSUJh",
         // password: "12345678",
         port: 5432,
-        database: "VSIM_DB",
+        //database: "VSIM_DB",
+        database: "railway",
 };
 
 async function setupDatabase() {
