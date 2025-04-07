@@ -1,0 +1,437 @@
+{
+	"GeneralData":
+	{
+		"OperatorID": "",
+		"OperatorName": "Op1hjjhv",
+		"ScenarioName": "FAT 28 Feb 2025",
+		"InstructorID": "",
+		"InstructorName": "",
+		"Timestamp": "2025/02/27-18:10:14 - 2025/02/27-18:11:42",
+		"VehicleType": 7
+	},
+	"ReplayData": [
+		{
+			"Time": 0,
+			"RPM": 0,
+			"Speed": 0.00035124912392348051,
+			"Throttle": 0,
+			"Steering": -0.19999998807907104,
+			"Load": 55
+		},
+		{
+			"Time": 1,
+			"RPM": 0,
+			"Speed": 0.10677331686019897,
+			"Throttle": 0,
+			"Steering": -0.19259262084960938,
+			"Load": 55
+		},
+		{
+			"Time": 2,
+			"RPM": 0,
+			"Speed": 0.031261496245861053,
+			"Throttle": 0,
+			"Steering": -0.19753086566925049,
+			"Load": 55
+		},
+		{
+			"Time": 3,
+			"RPM": 0,
+			"Speed": 0.0050305398181080818,
+			"Throttle": 0,
+			"Steering": -0.19753086566925049,
+			"Load": 55
+		},
+		{
+			"Time": 4,
+			"RPM": 0,
+			"Speed": 0.029506387189030647,
+			"Throttle": 0,
+			"Steering": -0.19012343883514404,
+			"Load": 55
+		},
+		{
+			"Time": 5,
+			"RPM": 0,
+			"Speed": 0.023014003410935402,
+			"Throttle": 0,
+			"Steering": -0.19259262084960938,
+			"Load": 55
+		},
+		{
+			"Time": 6,
+			"RPM": 462,
+			"Speed": 0.022889452055096626,
+			"Throttle": 0,
+			"Steering": -0.19012343883514404,
+			"Load": 55
+		},
+		{
+			"Time": 7,
+			"RPM": 600,
+			"Speed": 0.030766408890485764,
+			"Throttle": 0,
+			"Steering": -0.19259262084960938,
+			"Load": 55
+		},
+		{
+			"Time": 8,
+			"RPM": 600,
+			"Speed": 0.037352491170167923,
+			"Throttle": 0,
+			"Steering": -0.20370370149612427,
+			"Load": 55
+		},
+		{
+			"Time": 9,
+			"RPM": 353,
+			"Speed": 0.027055354788899422,
+			"Throttle": 0,
+			"Steering": -0.22222220897674561,
+			"Load": 55
+		},
+		{
+			"Time": 10,
+			"RPM": 338,
+			"Speed": 0.0031656725332140923,
+			"Throttle": 1,
+			"Steering": -0.29382717609405518,
+			"Load": 55
+		},
+		{
+			"Time": 11,
+			"RPM": 1011,
+			"Speed": 0.31321066617965698,
+			"Throttle": 1,
+			"Steering": -0.42222219705581665,
+			"Load": 55
+		},
+		{
+			"Time": 12,
+			"RPM": 1543,
+			"Speed": 4.4837079048156738,
+			"Throttle": 1,
+			"Steering": -0.48518520593643188,
+			"Load": 55
+		},
+		{
+			"Time": 13,
+			"RPM": 1957,
+			"Speed": 6.9703636169433594,
+			"Throttle": 1,
+			"Steering": -0.32098764181137085,
+			"Load": 55
+		},
+		{
+			"Time": 14,
+			"RPM": 2269,
+			"Speed": 8.638092041015625,
+			"Throttle": 1,
+			"Steering": -0.22469133138656616,
+			"Load": 55
+		},
+		{
+			"Time": 15,
+			"RPM": 2400,
+			"Speed": 9.9451866149902344,
+			"Throttle": 1,
+			"Steering": -0.08518517017364502,
+			"Load": 55
+		},
+		{
+			"Time": 16,
+			"RPM": 2400,
+			"Speed": 10.846673011779785,
+			"Throttle": 1,
+			"Steering": 0.032098770141601562,
+			"Load": 55
+		},
+		{
+			"Time": 17,
+			"RPM": 2400,
+			"Speed": 11.343733787536621,
+			"Throttle": 1,
+			"Steering": -0.0086419582366943359,
+			"Load": 55
+		},
+		{
+			"Time": 18,
+			"RPM": 2103,
+			"Speed": 12.528572082519531,
+			"Throttle": 1,
+			"Steering": -0.02839505672454834,
+			"Load": 55
+		},
+		{
+			"Time": 19,
+			"RPM": 1881,
+			"Speed": 12.245996475219727,
+			"Throttle": 1,
+			"Steering": -0.035802483558654785,
+			"Load": 55
+		},
+		{
+			"Time": 20,
+			"RPM": 1992,
+			"Speed": 12.869698524475098,
+			"Throttle": 1,
+			"Steering": -0.074074089527130127,
+			"Load": 55
+		},
+		{
+			"Time": 21,
+			"RPM": 2075,
+			"Speed": 13.236838340759277,
+			"Throttle": 1,
+			"Steering": -0.10740739107131958,
+			"Load": 55
+		},
+		{
+			"Time": 22,
+			"RPM": 2155,
+			"Speed": 13.426151275634766,
+			"Throttle": 1,
+			"Steering": -0.14320987462997437,
+			"Load": 55
+		},
+		{
+			"Time": 23,
+			"RPM": 2230,
+			"Speed": 13.405537605285645,
+			"Throttle": 1,
+			"Steering": -0.19753086566925049,
+			"Load": 55
+		},
+		{
+			"Time": 24,
+			"RPM": 2300,
+			"Speed": 12.280438423156738,
+			"Throttle": 1,
+			"Steering": -0.24691355228424072,
+			"Load": 55
+		},
+		{
+			"Time": 25,
+			"RPM": 2385,
+			"Speed": 12.632285118103027,
+			"Throttle": 1,
+			"Steering": -0.21111112833023071,
+			"Load": 55
+		},
+		{
+			"Time": 26,
+			"RPM": 1858,
+			"Speed": 12.170709609985352,
+			"Throttle": 1,
+			"Steering": -0.21111112833023071,
+			"Load": 55
+		},
+		{
+			"Time": 27,
+			"RPM": 1979,
+			"Speed": 11.986303329467773,
+			"Throttle": 1,
+			"Steering": -0.21481484174728394,
+			"Load": 55
+		},
+		{
+			"Time": 28,
+			"RPM": 2067,
+			"Speed": 12.272317886352539,
+			"Throttle": 1,
+			"Steering": -0.21481484174728394,
+			"Load": 55
+		},
+		{
+			"Time": 29,
+			"RPM": 2147,
+			"Speed": 12.567777633666992,
+			"Throttle": 1,
+			"Steering": -0.18395060300827026,
+			"Load": 55
+		},
+		{
+			"Time": 30,
+			"RPM": 2222,
+			"Speed": 12.78178882598877,
+			"Throttle": 1,
+			"Steering": -0.17283952236175537,
+			"Load": 55
+		},
+		{
+			"Time": 31,
+			"RPM": 2293,
+			"Speed": 12.999203681945801,
+			"Throttle": 1,
+			"Steering": -0.17283952236175537,
+			"Load": 55
+		},
+		{
+			"Time": 32,
+			"RPM": 2359,
+			"Speed": 13.198356628417969,
+			"Throttle": 1,
+			"Steering": -0.15679013729095459,
+			"Load": 55
+		},
+		{
+			"Time": 33,
+			"RPM": 2400,
+			"Speed": 13.366415977478027,
+			"Throttle": 1,
+			"Steering": -0.07160496711730957,
+			"Load": 55
+		},
+		{
+			"Time": 34,
+			"RPM": 2396,
+			"Speed": 13.226195335388184,
+			"Throttle": 0,
+			"Steering": -0.0086419582366943359,
+			"Load": 55
+		},
+		{
+			"Time": 35,
+			"RPM": 2230,
+			"Speed": 7.1436042785644531,
+			"Throttle": 0,
+			"Steering": -0.0086419582366943359,
+			"Load": 55
+		},
+		{
+			"Time": 36,
+			"RPM": 1602,
+			"Speed": 0.22099781036376953,
+			"Throttle": 0,
+			"Steering": -0.0037037134170532227,
+			"Load": 55
+		},
+		{
+			"Time": 37,
+			"RPM": 1084,
+			"Speed": 0.022701537236571312,
+			"Throttle": 0,
+			"Steering": -0.0061728358268737793,
+			"Load": 55
+		}
+	],
+	"IgnitionEvent": [
+		{
+			"Frame": 0,
+			"ignitionEvent": false
+		},
+		{
+			"Frame": 359,
+			"ignitionEvent": true
+		}
+	],
+	"ExtinguisherEvent": [],
+	"radioEvent": [],
+	"parkBrakeEvent": [
+		{
+			"Frame": 0,
+			"parkBrakeEvent": true
+		},
+		{
+			"Frame": 605,
+			"parkBrakeEvent": false
+		}
+	],
+	"IntendedGearEvent": [
+		{
+			"Frame": 525,
+			"intendedGearEvent": 7
+		}
+	],
+	"ActualGearEvent": [
+		{
+			"Frame": 0,
+			"actualGearEvent": 0
+		},
+		{
+			"Frame": 525,
+			"actualGearEvent": 1
+		},
+		{
+			"Frame": 1120,
+			"actualGearEvent": 2
+		},
+		{
+			"Frame": 1546,
+			"actualGearEvent": 1
+		},
+		{
+			"Frame": 1584,
+			"actualGearEvent": 2
+		},
+		{
+			"Frame": 2313,
+			"actualGearEvent": 1
+		}
+	],
+	"ReplayOperatorError": [
+		{
+			"Name": "Tidak membunyikan klakson sebelum mesin hidup",
+			"RecordedTime": "00:05",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Tidak melakukan pengujian rem servis",
+			"RecordedTime": "00:21",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Tidak melakukan pengujian retarder",
+			"RecordedTime": "00:21",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Tidak melakukan pengujian rem parkir",
+			"RecordedTime": "00:21",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Tidak melakukan pengujian rem darurat",
+			"RecordedTime": "00:21",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Rem servis digunakan diatas 10km/jam ",
+			"RecordedTime": "00:34",
+			"EndTime": "endTime",
+			"Value": 1
+		},
+		{
+			"Name": "Pengereman yang agresif",
+			"RecordedTime": "00:34",
+			"EndTime": "endTime",
+			"Value": 1
+		}
+	],
+	"ReplayEvents": [
+		{
+			"Name": "Debu yang berlebihan dari truk di depan",
+			"RecordedTime": "00:31",
+			"Value": 0
+		}
+	],
+	"TotalPoint":
+	{
+		"TotalPoint": 7
+	},
+	"LoadingUnloadData": [],
+	"Requirements":
+	{
+		"TestParkingBrake": "Enabled",
+		"TestSecondaryBrake": "Enabled",
+		"TestRetarderBrake": "Enabled",
+		"TestServiceBrake": "Enabled",
+		"TestEmergencySteer": "Disabled",
+		"TestTCS": "Disabled"
+	}
+}
