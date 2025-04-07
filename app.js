@@ -16,14 +16,16 @@ const upload = multer({ dest: "uploads/" });
 app.use(cors());
 
 // setup database
-const dbConfig = {
-  user: "postgres",
-  // host: "127.0.0.1",
-  host: "postgres.railway.internal",
-  // password: "12345678",
-  password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
-  port: 5432,
-  database: "VSIM_DB",
+const dbConfig = process.env.DATABASE_URL
+    ? {
+        connectionString: process.env.DATABASE_URL,
+    }
+    : {
+        user: "postgres",
+        host: "postgres.railway.internal",
+        password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
+        port: 5432,
+        database: "VSIM_DB",
 };
 
 async function setupDatabase() {
@@ -145,10 +147,11 @@ app.get("/Results", async (req, res) => {
     }
 
     res.json(json);
-  } catch (error) {
-    console.error("Error fetching latest result:", error.message);
-    res.status(500).json({ error: "Internal Server Error" });
-  } finally {
+    } catch (error) {
+        console.error("Full error:", error);
+        console.error("Error stack:", error.stack);
+        res.status(500).json({ error: error.message });
+    } finally {
     await client.end();
   }
 });
