@@ -10,7 +10,7 @@ const { Client } = require("pg");
 const app = express();
 
 const storage = multer.memoryStorage();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; //just 3001
 const upload = multer({ dest: "uploads/" });
 
 app.use(cors());
