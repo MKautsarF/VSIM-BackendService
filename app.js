@@ -90,8 +90,10 @@ setupDatabase();
 
 // setup api
 app.post("/Results", upload.single("File"), async (req, res) => {
+    console.log("/Results route hit!");
   if (!req.file) {
-    return res.status(400).json({ error: "No file uploaded" });
+      console.log("No file received.");
+      return res.status(400).json({ error: "No file uploaded" });
   }
 
   const filePath = path.join(__dirname, req.file.path);
