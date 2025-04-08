@@ -39,7 +39,7 @@ const dbConfig = process.env.DATABASE_URL
         user: "postgres",
         host: "postgres.railway.internal",
         //host: "127.0.0.1",
-        password: "AANLOMYHXsRHgzTbMiICaqlvyjOFSUJh",
+        password: "MYsZWzarNwEXJuswIofWyzbERQKfnvbI",
         //password: "12345678",
         port: 5432,
         database: "VSIM_DB",
@@ -295,7 +295,7 @@ app.get("/Results", async (req, res) => {
 });
 
 // start the server
-app.listen(PORT, (error) => {
+app.listen(PORT, "0.0.0.0", (error) => {
     if (!error) {
         console.log("Server is Successfully Running, and App is listening on port " + PORT);
         console.log("Available routes:");
