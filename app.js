@@ -80,7 +80,7 @@ async function setupDatabase() {
     }
 }
 
-setupDatabase();
+// setupDatabase();  DISABLED FOR TESTING
 
 // DATABASE CHECK ENDPOINT - NEW
 app.get("/check-db", async (req, res) => {
