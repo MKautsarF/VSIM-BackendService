@@ -294,8 +294,15 @@ app.get("/Results", async (req, res) => {
     }
 });
 
+// STATUS CHECK
+app.get("/", (req, res) => {
+    res.send("Server is up! Backend is alive!");
+});
+
+
 // start the server
 app.listen(PORT, "0.0.0.0", (error) => {
+    console.log("ENV PORT:", process.env.PORT);
     if (!error) {
         console.log("Server is Successfully Running, and App is listening on port " + PORT);
         console.log("Available routes:");
