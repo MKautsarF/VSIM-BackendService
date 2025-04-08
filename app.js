@@ -42,7 +42,7 @@ const dbConfig = process.env.DATABASE_URL
         password: "AANLOMYHXsRHgzTbMiICaqlvyjOFSUJh",
         //password: "12345678",
         port: 5432,
-        database: "railway",
+        database: "VSIM_DB",
     };
 
 async function setupDatabase() {
