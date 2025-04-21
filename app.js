@@ -13,7 +13,26 @@ const storage = multer.memoryStorage();
 const PORT = 3001;
 const upload = multer({ dest: "uploads/" });
 
-app.use(cors());
+const allowedOrigins = [
+  "http://202.138.242.31:3000", // frontend running on this IP:PORT
+  // "http://202.138.242.31:3001",
+  "http://192.168.100.33:3000", // network local access
+  "http://127.0.0.1:3000", // local access
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // allow requests with no origin (like mobile apps, curl)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true, // allow sending cookies if needed
+  })
+);
 
 // setup database
 const dbConfig = {
