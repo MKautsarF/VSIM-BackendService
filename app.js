@@ -127,7 +127,7 @@ app.get("/Results", async (req, res) => {
     await client.connect();
 
     const query = `
-          SELECT "DATA" 
+          SELECT "DATA","DATE", "TIME", "ID"
           FROM "Simulation_Data" 
           ORDER BY "DATE" DESC, "TIME" DESC 
           LIMIT 1;
@@ -138,15 +138,93 @@ app.get("/Results", async (req, res) => {
       return res.status(404).json({ message: "No data found" });
     }
 
-    const json = result.rows[0].DATA;
+    const { ID, DATA, DATE, TIME } = result.rows[0];
 
-    if (!json) {
+    if (!DATA) {
       return res.status(500).json({ message: "Error decrypting data" });
     }
 
-    res.json(json);
+    res.json({
+      data: DATA,
+      date: DATE,
+      time: TIME,
+      id: ID,
+    });
   } catch (error) {
     console.error("Error fetching latest result:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  } finally {
+    await client.end();
+  }
+});
+
+app.get("/Results/:id", async (req, res) => {
+  const client = new Client(dbConfig);
+  const { id } = req.params;
+
+  try {
+    await client.connect();
+
+    const query = `
+      SELECT "DATA", "DATE", "TIME", "ID"
+      FROM "Simulation_Data"
+      WHERE "ID" = $1
+      LIMIT 1;
+    `;
+    const result = await client.query(query, [id]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: "No data found for ID " + id });
+    }
+
+    const { ID, DATA, DATE, TIME } = result.rows[0];
+
+    if (!DATA) {
+      return res.status(500).json({ message: "Error decrypting data" });
+    }
+
+    res.json({
+      data: DATA,
+      date: DATE,
+      time: TIME,
+      id: ID,
+    });
+  } catch (error) {
+    console.error("Error fetching result by ID:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  } finally {
+    await client.end();
+  }
+});
+
+app.get("/AllResults", async (req, res) => {
+  const client = new Client(dbConfig);
+
+  try {
+    await client.connect();
+
+    const query = `
+      SELECT "ID", "DATA", "DATE", "TIME"
+      FROM "Simulation_Data"
+      ORDER BY "DATE" DESC, "TIME" DESC;
+    `;
+
+    const result = await client.query(query);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: "No simulation data found" });
+    }
+
+    const allResults = result.rows.map((row) => ({
+      id: row.ID,
+      data: row.DATA,
+      date: row.DATE,
+      time: row.TIME,
+    }));
+
+    res.json(allResults);
+  } catch (error) {
+    console.error("Error fetching all simulation data:", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   } finally {
     await client.end();
